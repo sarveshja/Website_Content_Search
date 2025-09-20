@@ -19,6 +19,15 @@
   font-weight: bold;
   color: #ffffff;
   margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: space-between; /* No. x on left, score on right */
+  align-items: center;
+}
+
+.score {
+  font-size: 0.9rem;
+  color: #ccc;
+  font-weight: normal;
 }
 
 .body {
