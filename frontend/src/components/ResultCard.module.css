@@ -1,0 +1,42 @@
+.card {
+  background: #1b1b1b;
+  border-radius: 10px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.2);
+}
+
+.header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.body {
+  flex: 1;
+}
+
+.text {
+  max-height: 250px;
+  overflow-y: auto;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  padding-right: 4px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.text::-webkit-scrollbar {
+  display: none;
+}
