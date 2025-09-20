@@ -135,17 +135,31 @@ Click the search button.
 The application will display the top ten most relevant content chunks extracted from the website, along with similarity scores and source URLs.
 
 Notes
-
+```
 The embedding model used is all-MiniLM-L6-v2 with a 384-dimensional vector space.
 Cosine similarity is used for semantic matching.
 Each chunk is limited to 500 words.
 NLTK punkt is handled automatically in the backend at runtime and does not require manual installation.
-
+```
 Dependencies
+```
+Backend
 
-Django, Django REST Framework, Django CORS Headers.
-Requests, BeautifulSoup4.
-NLTK.
-Sentence-Transformers, Torch.
-ChromaDB.
-TF-Keras for compatibility with Transformers.
+Django
+Django REST Framework
+Django CORS Headers
+Requests
+BeautifulSoup4
+NLTK
+Sentence-Transformers
+Torch
+ChromaDB
+TF-Keras (for compatibility with Transformers)
+
+Frontend
+
+React
+React DOM
+Vite
+Axios
+```
