@@ -3,7 +3,7 @@ Website Content Search (Async Assignment)
 This project is a full-stack single-page application (SPA) that allows users to input a website URL and a search query. The backend fetches and cleans the HTML from the given URL, splits the text into manageable chunks, generates embeddings using a transformer model, stores them in a vector database (ChromaDB), and performs semantic search to return the most relevant chunks.
 
 Project Structure
-
+```
 backend
 │
 ├── backend
@@ -53,53 +53,68 @@ frontend
 ├── package.json
 ├── vite.config.js
 └── node_modules
-
+```
 Tech Stack
 
 Frontend uses React with Vite, Axios for API requests, and custom CSS for styling.
 Backend uses Django with Django REST Framework, ChromaDB for vector storage, Sentence-Transformers for embeddings, NLTK for tokenization, BeautifulSoup and Requests for HTML fetching and parsing.
 
 Prerequisites
-
+```
 Python version 3.10 or higher.
 Node.js version 18 or higher.
 Git for cloning the repository.
 Virtualenv recommended for backend.
-
+```
 Backend Setup (Django)
-
+```
 Clone the repository:
 git clone <repo-url>
 cd backend
-
+```
 Create a virtual environment:
+```
 python -m venv venv
-
+```
 Activate the virtual environment:
+```
 On Windows: venv\Scripts\activate
 On macOS/Linux: source venv/bin/activate
+```
 
 Install dependencies:
+```
 pip install -r requirements.txt
+```
 
 Apply migrations:
+```
 python manage.py migrate
+```
 
 Run the backend server:
+```
 python manage.py runserver
+```
 
 The backend will now be available at http://localhost:8000
 
 Frontend Setup (React + Vite)
 
 Navigate to the frontend folder:
+```
 cd frontend
+```
 
 Install dependencies:
+```
 npm install
+```
 
 Start the development server:
+```
 npm run dev
+```
 
 The frontend will now be available at http://localhost:5173
 
